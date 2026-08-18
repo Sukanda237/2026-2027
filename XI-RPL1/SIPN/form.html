@@ -1,0 +1,50 @@
+<?php require 'navbar.php' ?>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Form Tambah Siswa</h4>
+                </div>
+                <div class="card-body">
+                    <form action="index.php?action=create" method="POST">
+                        <h3>Data Profil Siswa</h3>
+                        <!-- <label>NIS:</label><br> -->
+                        <input type="text" name="nis" required class="form-control"
+                            Placeholder="Nomor Induk Siswa | Contoh: 1234567890"><br>
+
+                        <!-- <label>Nama Lengkap:</label><br> -->
+                        <input type="text" name="nama" required class="form-control"
+                            Placeholder="Nama Lengkap Siswa | Contoh: Ujang Asep"><br>
+
+                        <!-- <label>Kelas:</label><br> -->
+                        <input type="text" name="kelas" required class="form-control"
+                            placeholder="Kelas Siswa | Contoh: XI-RPL-1"><br>
+
+                        <label class="form-check-label">Jenis Kelamin:</label><br>
+                        <input type="radio" name="jenis_kelamin" value="L" checked class="form-check-input"> Laki-laki
+                        <br>
+                        <input type="radio" name="jenis_kelamin" value="P" class="form-check-input"> Perempuan<br><br>
+
+                        <hr>
+                        <h3>Data Kredensial Akun (Tabel Users)</h3>
+                        <!-- <label>Username:</label><br> -->
+                        <input type="text" name="username" required class="form-control"
+                            placeholder="Username Akun | Contoh: ujang123"><br>
+
+                        <!-- <label>Password Akun:</label><br> -->
+                        <input type="password" name="password" required class="form-control"
+                            placeholder="Password Akun | Contoh: password123"><br>
+
+                        <button type="submit" class="btn btn-primary">Simpan Data</button>
+                        <a href="index.php" class="btn btn-secondary">Kembali</a>
+                    </form>
+                </div>
+            </div><br><br>
+        </div>
+    </div>
+</div>
+
+
+<?php require 'footer.php' ?>
