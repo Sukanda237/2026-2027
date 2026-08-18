@@ -8,3 +8,6 @@ $siswa = [
 
 echo "Nama Siswa " . $siswa["nama"] . "<br>";
 echo "Umur Siswa " . $siswa["umur"] . "<br>";
+
+
+//mencoba github atau git
